@@ -7,7 +7,7 @@ RUN pip install awscli --upgrade --user
 RUN echo 'export PATH=~/.local/bin:$PATH'>>root/.bashrc
 
 # Install groff to enable AWS CLI command line help
-RUN apt-get update \
+RUN apt-get update && \
     apt-get install -y \
         zip \
     && apt-get --assume-yes install groff
