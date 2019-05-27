@@ -1,3 +1,2 @@
 FROM cszubert/awscli-python
-
-pip install virtualenv
+RUN pip install virtualenv
